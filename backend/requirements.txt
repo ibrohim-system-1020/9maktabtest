@@ -1,0 +1,11 @@
+# 9-Maktab Smart School Management Platform - Production & Development Dependencies
+Django>=5.1.0,<6.2.0
+djangorestframework>=3.15.0
+djangorestframework-simplejwt>=5.4.0
+django-cors-headers>=4.4.0
+whitenoise>=6.7.0
+uritemplate>=4.1.2
+pyjwt>=2.8.0
+
+# Optional production database driver (PostgreSQL)
+# psycopg2-binary>=2.9.9

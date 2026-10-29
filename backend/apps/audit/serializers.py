@@ -1,0 +1,10 @@
+from rest_framework import serializers
+from apps.audit.models import AuditLog
+
+class AuditLogSerializer(serializers.ModelSerializer):
+    user_name = serializers.CharField(source='user.get_full_name', read_only=True)
+    action_display = serializers.CharField(source='get_action_display', read_only=True)
+
+    class Meta:
+        model = AuditLog
+        fields = '__all__'
